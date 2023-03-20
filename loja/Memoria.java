@@ -1,7 +1,7 @@
 package loja;
 
 public class Memoria extends Placa {
-  int capacidade;
+  private int capacidade;
 
   public Memoria(String descricao, int capacidade, double preco){
     super(descricao, preco);

@@ -7,8 +7,4 @@ public class ComponenteAvulso extends Componente {
     this.descricao = descricao;
     this.preco = preco;
   }
-
-  public String toString(){
-    return "ID #" + this.codigo + " - " + this.descricao + " - R$ " + this.preco + System.lineSeparator();
-  }
 }

@@ -1,18 +1,19 @@
 package loja;
 
 public class Componente {
-  int codigo;
-  double preco;
-  String descricao;
+  protected int codigo;
+  protected double preco;
+  protected String descricao;
 
-  static int ProximoCodigo = 1;
+  private static int ProximoCodigo = 1;
 
-  public Componente(){
+  public Componente() {
     this.codigo = Componente.ProximoCodigo;
     Componente.ProximoCodigo += 1;
-  } 
-  
-  public String toString(){
-    return "ID #" + this.codigo + " - " + this.descricao + " - R$ " + this.preco;
+  }
+
+  public String toString() {
+    return this.getClass().getName().replace("loja.", "") + " - Código  #"
+        + this.codigo + " - " + this.descricao + " - R$ " + this.preco;
   }
 }

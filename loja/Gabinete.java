@@ -1,7 +1,7 @@
 package loja;
 
 public class Gabinete extends ComponenteMontado {
-  Placa[] partes;
+  private Placa[] partes;
 
   public Gabinete(String descricao){
     super();

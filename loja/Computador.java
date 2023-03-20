@@ -1,8 +1,7 @@
 package loja;
 
 public class Computador extends ComponenteMontado {
-  Componente[] partes;
-
+  
   public Computador(String descricao) {
     this.descricao = descricao;
   }
