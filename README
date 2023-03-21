@@ -1,0 +1,25 @@
+# Sobre o programa
+
+## Classes
+A hieraquia de classes construída foi:
+
+                                    Componente
+                                        |
+                      __________________|__________________
+         __ ComponenteAvulso _                         ComponenteMontado
+        |          |          |                          |           |
+      __|__      __|__      __|__                        |           |
+    Monitor     Teclado     Placa                   Computador    Gabinete
+                              |
+                              |
+                         _____|_____
+                        |           |
+                  Processador      Memoria 
+
+Onde as classes Componente, ComponenteAvulso, Placa e ComponenteMontado são polimórficas.
+
+## Rodando o programa
+1 - Compile o programa utilizando a classe de teste:
+$ javac Teste.java
+2 - Rode o programa utilizando o object class criado de teste:
+$ java Teste
